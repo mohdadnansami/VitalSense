@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSense Health | Contact</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #020617, #020d2d);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contact .subtitle {
+            color: #cbd5f5;
+            margin-bottom: 40px;
+        }
+
+        .contact-cards {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 30px;
+            border-radius: 16px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(56, 189, 248, 0.15);
+        }
+
+        .contact-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        .contact-card a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .no-link {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .contact h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Contact Team</h1>
+        <p class="subtitle">Reach out to the team behind VitalSense Health</p>
+
+        <div class="contact-cards">
+
+            <div class="contact-card">
+                <h3>Mohd Adnan Sami</h3>
+                <p>📧 <a href="mailto:mohdadnan032006@gmail.com">mohdadnan032006@gmail.com</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/mohd-adnan-sami-11b1542bb" target="_blank">LinkedIn Profile</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Mallampalli Satish</h3>
+                <p>📧 <a href="mailto:satishmallampalli10@gmail.com">satishmallampalli10@gmail.com</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/purna-venkata-satish-019a49325" target="_blank">LinkedIn Profile</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 VitalSense Health. All rights reserved.
+    </footer>
+
+</body>
+</html>

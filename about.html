@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSense Health</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #020617, #020d2d);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin-bottom: 30px;
+            color: #e2e8f0;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #020617;
+        }
+
+        .btn-primary:hover {
+            background: #0ea5e9;
+        }
+
+        .btn-secondary {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .btn-secondary:hover {
+            background: #38bdf8;
+            color: #020617;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #cbd5f5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to VitalSense Health</h1>
+        <h2>
+            Smart Health Monitoring. Real-Time Insights. Better Living.
+            <br>
+            Track vital health parameters securely and effortlessly with intelligent technology.
+        </h2>
+
+        <div class="buttons">
+            <a href="we can add any link over hear" class="btn-primary">Get Started</a>
+            <a href="we can add any link over hear" class="btn-secondary">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>🩺 Real-Time Monitoring</h3>
+            <p>Continuously monitor vital health parameters for proactive healthcare.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3> Smart Insights</h3>
+            <p>Visualize accurate health data with easy-to-understand analytics.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3> Secure Data</h3>
+            <p>Your health data is encrypted and protected with high security standards.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3> Connected Anywhere</h3>
+            <p>Access health data anytime, anywhere across multiple devices.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        VitalSense Health — Technology that cares.
+    </footer>
+
+</body>
+</html>
