@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar nav a {
+  color: #9ca3af;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  color: #ffffff;
+}
+
+.device-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 60px;
+}
+
+.device-selector input {
+  background: #020617;
+  border: 1px solid #374151;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.device-selector button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.status-section {
+  display: flex;
+  gap: 16px;
+  padding: 20px 60px;
+  flex-wrap: wrap;
+}
+
+.status-card,
+.vital-card,
+.chart-card,
+.alert-log {
+  background: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.status-card {
+  flex: 1 1 260px;
+}
+
+.status {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: #1f2937;
+}
+
+.vital-cards {
+  flex: 3 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.vital-card {
+  flex: 1 1 150px;
+}
+
+.vital-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 20px 60px;
+}
+
+.alert-log {
+  margin: 20px 60px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.footer {
+  padding: 40px 60px;
+  border-top: 1px solid #1f2937;
+  color: #9ca3af;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .navbar,
+  .device-selector,
+  .status-section,
+  .charts,
+  .alert-log,
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .device-selector {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .device-selector button,
+  .device-selector input {
+    width: 100%;
+  }
+
+  .status-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .vital-card {
+    flex: 1 1 100%;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .alert-log {
+    margin: 20px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 18px; }
+  .vital-value { font-size: 1.3rem; }
+}

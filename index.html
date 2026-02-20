@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VitalSense Health</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet.css"/>
+
+  <!-- Chart.js MUST load before your JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Your JS (defer prevents DOM errors) -->
+  <script src="pj.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">VitalSense Health</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="device-selector">
+  <label>Device ID:</label>
+  <input type="text" value="PATCH_001" disabled />
+
+  <button id="demoBtn">Demo</button>
+  <!-- FIXED ID -->
+  <button id="bleBtn">Bluetooth</button>
+</section>
+
+<section class="status-section">
+
+  <div class="status-card">
+    <h2>Status</h2>
+    <span id="status-text" class="status">No Data</span>
+    <p>Risk Score: <span id="risk-score">--</span></p>
+    <p id="status-time">--</p>
+  </div>
+
+  <div class="vital-cards">
+
+    <div class="vital-card">
+      <h3>Heart Rate</h3>
+      <p id="hr-value" class="vital-value">--</p>
+      <span>bpm</span>
+    </div>
+
+    <div class="vital-card">
+      <h3>SpO₂</h3>
+      <p id="spo2-value" class="vital-value">--</p>
+      <span>%</span>
+    </div>
+
+    <div class="vital-card">
+      <h3>Temperature</h3>
+      <p id="temp-value" class="vital-value">--</p>
+      <span>°C</span>
+    </div>
+
+    <div class="vital-card">
+      <h3>GSR</h3>
+      <p id="gsr-value" class="vital-value">--</p>
+      <span>units</span>
+    </div>
+
+    <div class="vital-card">
+      <h3>Movement</h3>
+      <p id="movement-value" class="vital-value">--</p>
+      <span>index</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="charts">
+
+  <div class="chart-card">
+    <h3>Heart Rate</h3>
+    <canvas id="hrChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>SpO₂</h3>
+    <canvas id="spo2Chart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Temperature</h3>
+    <canvas id="tempChart"></canvas>
+  </div>
+
+</section>
+
+<section class="alert-log">
+  <h2>Alert Log</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>HR</th>
+          <th>SpO₂</th>
+          <th>Temp</th>
+          <th>Risk</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="alertsTableBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>VitalSense • Awareness only • Not a medical device</p>
+</footer>
+
+</body>
+</html>
